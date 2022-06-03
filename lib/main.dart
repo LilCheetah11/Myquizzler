@@ -76,7 +76,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  questionNumber = questionNumber + 1;
+                  questionNumber++;
                   scoreKeeper.add(
                     const Icon(
                       Icons.check,
@@ -104,7 +104,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  questionNumber = questionNumber + 1;
+                  questionNumber++;
                   scoreKeeper.add(const Icon(
                     Icons.close,
                     color: Colors.red,
